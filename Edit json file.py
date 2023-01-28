@@ -2,7 +2,7 @@ import json
 
 
 def file_read():
-    with open("Names.json", "r+") as json_file:
+    with open("Names.json", "r") as json_file:
         data = json.load(json_file)
         temp = data["names"]
     return temp
